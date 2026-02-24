@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
   --section-logo-width: 35vw;
+  --form-top-bottom-heigth: 35vh;
+  --form-top-bottom-background-color: wheat;
 }
 
 body {
@@ -75,7 +77,6 @@ body {
 .section-logo {
   width: var(--section-logo-width);
   height: 100vh;
-  border: 1px solid red;
   position: relative;
   display: flex;
   justify-content: center;
@@ -125,6 +126,30 @@ body {
 }
 
 .section-form {
-  border: 1px solid blue;
   width: calc(100vw - var(--section-logo-width));
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.introduction,
+.input-section,
+.log-options {
+  border: 1px solid black;
+}
+
+.introduction {
+  height: var(--form-top-bottom-heigth);
+  background-color: var(--form-top-bottom-background-color);
+  padding: 100px 300px 40px 50px;
+  font-size: 1.7rem;
+}
+
+.introduction:first-child p {
+  margin-bottom: 30px;
+}
+
+.input-section {
+  height: calc(100vh - (var(--form-top-bottom-heigth) * 2));
+  padding: 0 30px;
 }
