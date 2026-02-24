@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 :root {
   --section-logo-width: 35vw;
   --form-top-bottom-heigth: 35vh;
-  --form-top-bottom-background-color: wheat;
+  --form-top-bottom-background-color: hsl(30, 100%, 90%);
 }
 
 body {
@@ -152,4 +152,37 @@ body {
 .input-section {
   height: calc(100vh - (var(--form-top-bottom-heigth) * 2));
   padding: 0 30px;
+}
+
+.log-options {
+  height: var(--form-top-bottom-heigth);
+  background-color: var(--form-top-bottom-background-color);
+  padding: 50px 300px 20px 50px;
+  font-size: 1.7rem;
+}
+
+button {
+  margin-bottom: 40px;
+  background-color: hsl(15, 72%, 50%);
+  font-weight: bold;
+  padding: 10px 50px;
+  border-radius: 12px;
+  border: 2px solid black;
+  color: white;
+}
+
+button:hover {
+  background-color: hsl(15, 72%, 60%);
+  color: black;
+}
+
+button:active {
+  background-color: hsl(15, 72%, 70%);
+  color: black;
+}
+
+.log-options a {
+  font-weight: bold;
+  color: #996600;
+  text-decoration: none;
 }
