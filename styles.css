@@ -132,17 +132,11 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.introduction,
-.input-section,
-.log-options {
-  border: 1px solid black;
-}
-
 .introduction {
   height: var(--form-top-bottom-heigth);
   background-color: var(--form-top-bottom-background-color);
   padding: 100px 300px 40px 50px;
-  font-size: 1.7rem;
+  font-size: 1.85rem;
 }
 
 .introduction:first-child p {
@@ -185,4 +179,50 @@ button:active {
   font-weight: bold;
   color: #996600;
   text-decoration: none;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 50px;
+}
+
+.input-section > p {
+  font-size: 1.85rem;
+  margin-bottom: 15px;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.input-styles {
+  display: flex;
+  gap: 80px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-bottom: 8px;
+}
+
+input {
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid coral;
+  box-shadow: 3px 3px 5px black;
 }
