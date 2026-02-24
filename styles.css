@@ -63,7 +63,55 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-img {
-    width: 500px;
-    height: 500px;
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-logo {
+  width: 35%;
+  height: 100vh;
+  border: 1px solid red;
+  position: relative;
+}
+
+.background-image {
+  height: 100%;
+}
+
+.logo-container {
+  position: absolute;
+  top: 8%;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  gap: 20px;
+}
+
+.odin-logo {
+  height: 10rem;
+}
+
+.logo-text {
+  font-family: 'Avara';
+  font-size: 6rem;
+  color: white;
+}
+
+.photo-reference {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+
+.photo-reference > a {
+  color: white;
+  font-size: 2rem;
+}
+
+.section-form {
+  border: 1px solid blue;
 }
