@@ -56,3 +56,16 @@ p {
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
+
+/* Variables */
+:root {
+  --background-color-1: #F6F2EE;
+  --background-color-2: #EAF4F8;
+  --title-text-color: #A63715;
+  --link-text-color: #005F8F;
+  --body-text-color: #2E2E2E;
+  --button-color: #C7431B;
+  --button-text-color: #FFFFFF;
+  --container-image-logo-width: 35vw;
+  --form-info-log-in-height: 32vh;
+}
