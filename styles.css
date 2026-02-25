@@ -36,8 +36,7 @@ body {
 /* 6. Improve media defaults */
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
-}
+} 
 
 /* 7. Inherit fonts for form controls */
 input, button, textarea, select {
@@ -68,4 +67,25 @@ h1, h2, h3, h4, h5, h6 {
   --button-text-color: #FFFFFF;
   --container-image-logo-width: 35vw;
   --form-info-log-in-height: 32vh;
+}
+
+/* Container flex division */
+.container-image-logo, /* TEMP FOR VISUALIZATION */
+.container-form {
+  border: 5px dashed black;
+}
+
+.container-main {
+  display: flex;
+}
+
+.container-image-logo {
+  position: relative;
+  flex: 0 0 var(--container-image-logo-width);
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.container-form {
+  flex: 1;
 }
