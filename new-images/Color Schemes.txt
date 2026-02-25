@@ -1,0 +1,29 @@
+Temple (Corrected)
+
+Background 1: #F6F2EE
+Background 2: #EAF4F8
+Titles: #A63715
+Links: #005F8F
+Body: #2E2E2E
+Button: #C7431B
+Button Text: #FFFFFF
+
+Snow (Corrected)
+
+Background 1: #F4F1EF
+Background 2: #E8DFDA
+Titles: #5A4A44
+Links: #2C5D6E (or #1F4754 for AAA)
+Body: #1F1F1F
+Button: #7A574B
+Button Text: #FFFFFF
+
+Coastal (Corrected)
+
+Background 1: #F2F4F3
+Background 2: #E3ECEF
+Titles: #2F3A3F
+Links: #00545C
+Body: #1A1A1A
+Button: #0B3C49
+Button Text: #FFFFFF
