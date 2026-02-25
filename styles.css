@@ -60,8 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 :root {
   --background-color-1: #F6F2EE;
   --background-color-2: #EAF4F8;
-  --title-text-color: #A63715;
-  --link-text-color: #005F8F;
+  --background-contrast-color: #F6F2EE;
+  --link-text-color: #AC8218;
+  --link-text-color-visited: #005F8F;
   --body-text-color: #2E2E2E;
   --button-color: #C7431B;
   --button-text-color: #FFFFFF;
@@ -83,9 +84,61 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   flex: 0 0 var(--container-image-logo-width);
   height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .container-form {
   flex: 1;
+}
+
+/* Left container styling */
+.background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-ribbon {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  width: 100%;
+  background-color: hsla(0, 0%, 18%, 0.7);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0;
+  box-shadow: 0px 3px 10px var(--background-contrast-color), 0px -3px 10px var(--background-contrast-color);
+}
+
+.odin-logo {
+  height: 8.5rem;
+}
+
+.title-logo {
+  font-family: 'NoCurvesBoustrophedon';
+  font-size: 6rem;
+  color: hsl(30, 31%, 95%);
+}
+
+.background-image-credits {
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.15rem;
+  background-color: hsla(30, 31%, 95%, 0.7);
+  color: black;
+}
+
+.background-image-credits a {
+  color: var(--link-text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.background-image-credits a:visited {
+  color: var(--link-text-color-visited);
 }
