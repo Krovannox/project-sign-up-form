@@ -58,15 +58,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Variables */
 :root {
-  --background-color-1: #ADD8E6;
+  --background-color-1: #D7EDF8;
   --background-color-2: #F2F4F3;
   --background-contrast-color: #F8F8FF;
   --background-link-text-color: #00CCFF;
   --background-link-text-color-visited: #7B68EE;
   --link-text-color: #00545C;
-  --link-text-color-visited: white; /* Change */
+  --link-text-color-visited: #7B68EE;
   --body-text-color: #1A1A1A;
   --button-color: #0B3C49;
+  --button-color-hover: hsl(193, 74%, 26%);
+  --button-color-active: hsl(193, 74%, 36%);
   --button-text-color: #FFFFFF;
   --container-image-logo-width: 35vw;
   --form-inputs-height: 34vh;
@@ -135,7 +137,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .background-image-credits a {
   color: var(--background-link-text-color);
-  text-decoration: none;
 }
 
 .background-image-credits a:visited {
@@ -216,4 +217,41 @@ input:user-valid {
 
 input:user-invalid {
   border: 2px solid red;
+}
+
+.cont-log-in {
+  padding: 50px 250px 0 50px;
+}
+
+button {
+  padding: 15px 70px;
+  font-size: 1.3rem;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--button-color-hover);
+}
+
+button:active {
+  background-color: var(--button-color-active);
+}
+
+.cont-log-in p {
+  font-size: 1.3rem;
+}
+
+.cont-log-in a {
+  color: var(--link-text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cont-log-in a:visited {
+  color: var(--link-text-color-visited);
 }
