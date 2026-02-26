@@ -156,5 +156,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cont-info {
-  padding: 50px 50px;
+  padding: 100px 250px 0 50px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--body-text-color);
+}
+
+.cont-info p:nth-child(2) {
+  margin-bottom: 20px;
 }
