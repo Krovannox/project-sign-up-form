@@ -58,13 +58,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Variables */
 :root {
-  --background-color-1: #F6F2EE;
-  --background-color-2: #EAF4F8;
-  --background-contrast-color: #F6F2EE;
-  --link-text-color: #AC8218;
-  --link-text-color-visited: #005F8F;
-  --body-text-color: #2E2E2E;
-  --button-color: #C7431B;
+  --background-color-1: #E3ECEF;
+  --background-color-2: #F2F4F3;
+  --background-contrast-color: #F6F2EE; /* Change */
+  --background-link-text-color: #AC8218; /* Change */
+  --background-link-text-color-visited: white; /* Change */
+  --link-text-color: #00545C;
+  --link-text-color-visited: white; /* Change */
+  --body-text-color: #1A1A1A;
+  --button-color: #0B3C49;
   --button-text-color: #FFFFFF;
   --container-image-logo-width: 35vw;
   --form-inputs-height: 34vh;
@@ -116,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 .title-logo {
   font-family: 'NoCurvesBoustrophedon';
   font-size: 6rem;
-  color: hsl(30, 31%, 95%);
+  color: var(--background-contrast-color);
 }
 
 .background-image-credits {
@@ -125,8 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   text-align: center;
   font-size: 1.15rem;
-  background-color: hsla(30, 31%, 95%, 0.7);
-  color: black;
+  color: var(--background-contrast-color);
 }
 
 .background-image-credits a {
@@ -141,8 +142,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Right container styling */
 .form-inputs {
+  position: relative;
+  z-index: 1;
   flex: 0 0 var(--form-inputs-height);
   background-color: var(--background-color-2);
+  border-top: 3px solid hsla(0, 100%, 50%, 0.4);
+  border-bottom: 3px solid hsla(0, 100%, 50%, 0.4);
 }
 
 .form-info,
