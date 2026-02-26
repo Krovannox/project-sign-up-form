@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   flex: 1;
   height: 100vh;
+  color: var(--body-text-color);
 }
 
 /* Left container styling */
@@ -159,9 +160,60 @@ h1, h2, h3, h4, h5, h6 {
   padding: 100px 250px 0 50px;
   font-size: 1.6rem;
   font-weight: bold;
-  color: var(--body-text-color);
 }
 
 .cont-info p:nth-child(2) {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.cont-form-inputs {
+  padding: 30px 250px 0 50px;
+}
+
+.cont-form-inputs > p:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cont-form-inputs > p:nth-child(2) {
+  font-size: 1rem;
+  margin-bottom: 23px;
+  font-style: italic;
+}
+
+.cont-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-inputs {
+  display: flex;
+  gap: 80px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+input {
+  padding: 4px 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgb(169, 169, 169);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid var(--background-link-text-color);
+}
+
+input:user-valid {
+  border: 2px solid green;
+}
+
+input:user-invalid {
+  border: 2px solid red;
 }
