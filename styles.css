@@ -58,11 +58,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Variables */
 :root {
-  --background-color-1: #E3ECEF;
+  --background-color-1: #ADD8E6;
   --background-color-2: #F2F4F3;
-  --background-contrast-color: #F6F2EE; /* Change */
-  --background-link-text-color: #AC8218; /* Change */
-  --background-link-text-color-visited: white; /* Change */
+  --background-contrast-color: #F8F8FF;
+  --background-link-text-color: #00CCFF;
+  --background-link-text-color-visited: #7B68EE;
   --link-text-color: #00545C;
   --link-text-color-visited: white; /* Change */
   --body-text-color: #1A1A1A;
@@ -131,13 +131,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .background-image-credits a {
-  color: var(--link-text-color);
+  color: var(--background-link-text-color);
   text-decoration: none;
   font-weight: bold;
 }
 
 .background-image-credits a:visited {
-  color: var(--link-text-color-visited);
+  color: var(--background-link-text-color-visited);
 }
 
 /* Right container styling */
@@ -146,8 +146,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   flex: 0 0 var(--form-inputs-height);
   background-color: var(--background-color-2);
-  border-top: 3px solid hsla(0, 100%, 50%, 0.4);
-  border-bottom: 3px solid hsla(0, 100%, 50%, 0.4);
 }
 
 .form-info,
