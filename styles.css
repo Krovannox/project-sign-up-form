@@ -67,13 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   --button-color: #C7431B;
   --button-text-color: #FFFFFF;
   --container-image-logo-width: 35vw;
-  --form-info-log-in-height: 32vh;
-}
-
-/* Container flex division */
-.container-image-logo, /* TEMP FOR VISUALIZATION */
-.container-form {
-  border: 5px dashed black;
+  --form-inputs-height: 34vh;
 }
 
 .container-main {
@@ -88,6 +82,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-form {
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -141,4 +137,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .background-image-credits a:visited {
   color: var(--link-text-color-visited);
+}
+
+/* Right container styling */
+.form-inputs {
+  flex: 0 0 var(--form-inputs-height);
+  background-color: var(--background-color-2);
+}
+
+.form-info,
+.form-log-in {
+  flex: 1 0 auto;
+  background-color: var(--background-color-1);
 }
